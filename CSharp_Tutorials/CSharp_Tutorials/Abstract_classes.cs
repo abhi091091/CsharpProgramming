@@ -15,7 +15,7 @@ namespace CSharp_Tutorials
      One is to provide implementation to all the methods in the abstract class
             and
      other is to make the child class also as an abstact class if its not willing to provide any implementation
-     */
+      po ra jaffa */
     abstract  class Abstract_classes
     {
         public abstract void print();
