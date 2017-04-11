@@ -248,13 +248,66 @@ class Inheritance
             //BasicProgramsRevision.number_reverse();
             //BasicProgramsRevision.cox();
 
-            BasicProgramsRevision.bubblesort();
+          //  BasicProgramsRevision.bubblesort();
 
             // Delegates calling
-            Numbers_Delegate del = new Numbers_Delegate(Numbersall);
-            del(20);
-            
-   Console.ReadKey();
+            //  Numbers_Delegate del = new Numbers_Delegate(Numbersall);
+
+            // Why should we use enum example
+            Enums e1 = new Enums();
+            e1.ID = 101;
+            e1.Name = "Abhi";
+
+            Enums e2 = new Enums();
+            e2.ID = 102;
+            e2.Name = "Sravya";
+
+            Enums e3 = new Enums();
+            e3.ID = 103;
+            e3.Name = "Harsha";
+
+            Enums e4 = new Enums();
+            e4.ID = 104;
+            e4.Name = "STP";
+
+            Enums[] en = new Enums[4];
+            en[0] = e1;
+            en[1] = e2;
+            en[2] = e3;
+            en[3] = e4;
+
+            foreach(Enums enu in en)
+            {
+                Console.WriteLine("Id is {0} and Name is {1}",(enu.ID).ToString(), enu.Name);
+            }
+
+            //Enums concept explained clearly
+            Dog d1 = new CSharp_Tutorials.Dog(34, "Caeser", 13,Dog.Breed.Bocchu);
+            Dog d2 = new CSharp_Tutorials.Dog(44, "Sunny", 14, Dog.Breed.Bulldog);
+            Dog d3 = new CSharp_Tutorials.Dog(35, "Lion", 15, Dog.Breed.Rotveeler);
+            d1.print();
+            d2.print();
+            d3.print();
+
+            //Generics
+            Generics g1 = new Generics();
+            g1.isequal<int>(10, 15);
+
+            Generics g2 = new Generics();
+            g2.isequal <string>("Abhi","Abhi");
+
+            // To string method
+            Generics g3 = new Generics();
+            g3.firstname = "Abhi";
+            g3.ID = 10;
+            Console.WriteLine(g3.ToString());
+
+            // time conversion
+            TimeConversion.time_conversion();
+
+            // Grades
+            ClassGrades.Grades();
+            Console.ReadKey();
         }
 
     }
